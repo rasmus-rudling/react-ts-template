@@ -8,6 +8,9 @@ yarn
 ```
 
 ### Want to use Tailwind JIT?
+- [Set Up Tailwind JIT In React - The fastest way! 🚀](https://devdojo.com/savio/set-up-tailwind-jit-in-react-the-fastest-way)
+- [How to set up tailwindcss with create-react-app + jit feature](https://dev.to/akov/how-to-set-up-tailwindcss-with-create-react-app-jit-feature-1m20?signin=true)
+
 **If not:** Delete `tailwind.config.js` and `postcss.config.js`.
 ```bash
 yarn add -D tailwindcss@latest postcss-cli@8.3.1 autoprefixer@latest concurrently
