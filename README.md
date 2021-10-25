@@ -10,7 +10,7 @@ yarn
 ### Want to use Tailwind JIT?
 **If not:** Delete `tailwind.config.js` and `postcss.config.js`.
 ```bash
-yarn add -D tailwindcss@latest postcss-cli@8.3.1 autoprefixer@latest concurrently react-scripts
+yarn add -D tailwindcss@latest postcss-cli@8.3.1 autoprefixer@latest concurrently
 
 mkdir src/styles
 touch src/styles/output.css
