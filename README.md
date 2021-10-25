@@ -10,7 +10,7 @@ yarn
 ### Want to use Tailwind JIT?
 **If not:** Delete `tailwind.config.js` and `postcss.config.js`.
 ```bash
-yarn add -D tailwindcss@latest postcss-cli@8.3.1 autoprefixer@latest chokidar-cli concurrently
+yarn add -D tailwindcss@latest postcss-cli@8.3.1 autoprefixer@latest concurrently react-scripts
 
 mkdir src/styles
 touch src/styles/output.css
@@ -23,12 +23,12 @@ echo "@tailwind utilities;" >> src/styles/tailwind.css
 Change the scripts in `package.json` to:
 ```json
   "scripts": {
-    "start": "react-scripts start",
-    "build": "npm run watch:css && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "watch:css": "postcss src/tailwind.css -o src/index.css",
-    "watch": "chokidar \"./src/**/*.js\" -c \"npm run watch:css\"",
-    "dev": "concurrently \"npm run watch\" \"npm run start\""
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
+    "build": "webpack --config webpack/webpack.config.js --env env=prod",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "postcss -w src/styles/tailwind.css -o src/styles/output.css",
+    "dev": "concurrently \"npm run watch:css\" \"npm run start\""
   },
 ```
