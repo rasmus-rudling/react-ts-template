@@ -6,6 +6,7 @@ npx degit git@github.com:rrudling/react-ts-template.git app
 ```
 
 ### Want to use Tailwind JIT?
+**If not:** Delete `tailwind.config.js`.
 ```bash
 cd app
 yarn add -D @tailwindcss/jit autoprefixer postcss tailwindcss
