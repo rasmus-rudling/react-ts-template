@@ -28,7 +28,7 @@ Change the scripts in `package.json` to:
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:css": "postcss -w src/styles/tailwind.css -o src/styles/output.css"
+    "watch:css": "postcss -w src/styles/tailwind.css -o src/styles/output.css",
     "dev": "npm run watch:css && npm start"
   },
 ```
