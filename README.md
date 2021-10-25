@@ -8,6 +8,7 @@ yarn
 ```
 
 ### Want to use Tailwind JIT?
+Links I used for inspiration:
 - [Set Up Tailwind JIT In React - The fastest way! 🚀](https://devdojo.com/savio/set-up-tailwind-jit-in-react-the-fastest-way)
 - [How to set up tailwindcss with create-react-app + jit feature](https://dev.to/akov/how-to-set-up-tailwindcss-with-create-react-app-jit-feature-1m20?signin=true)
 
