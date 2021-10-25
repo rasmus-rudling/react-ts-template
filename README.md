@@ -9,8 +9,7 @@ npx degit git@github.com:rrudling/react-ts-template.git app
 **If not:** Delete `tailwind.config.js` and `postcss.config.js`.
 ```bash
 cd app
-yarn add -D @tailwindcss/jit autoprefixer postcss tailwindcss
-yarn add postcss-cli
+yarn add -D tailwindcss@latest postcss-cli@8.3.1 autoprefixer@latest
 
 mkdir src/styles
 touch src/styles/output.css
